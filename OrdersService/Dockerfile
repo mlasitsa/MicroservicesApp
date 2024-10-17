@@ -1,7 +1,7 @@
 # Use the official .NET 8 SDK image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-EXPOSE 80
+EXPOSE 80  # Make sure this exposes port 80 for HTTP
 
 # Build stage
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
